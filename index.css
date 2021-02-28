@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Overlock+SC&display=swap");
+
+html {
+  margin: 0;
+  min-height: 100%;
+  color: #3f3e3e;
+  background: #e4e4e4;
+}
+body {
+  margin: 0;
+  min-height: 100%;
+  font-family: "Overlock SC", cursive;
+}
+#navbar,
+.navbar-item {
+  background: #2f2f2f;
+  color: #e4e4e4 !important;
+}
+.navbar-item:hover {
+  color: #2f2f2f !important;
+}
+.navbar-item img {
+  max-height: 10rem !important;
+}
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+#navigation {
+  width: 100%;
+  margin: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+#navigation img {
+  width: 40%;
+}
+.card {
+  width: 90%;
+}
+.content li {
+  font-size: 12px;
+  font-family: "Roboto";
+}
+#work-nav {
+  display: flex;
+  justify-content: space-around;
+}
+@media only screen and (min-width: 992px) {
+  .card {
+    width: 40%;
+  }
+}

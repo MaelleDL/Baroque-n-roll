@@ -1,0 +1,87 @@
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script type="text/javascript" src="index.js"></script>
+    <title>Baroque'n'Roll</title>
+  </head>
+  <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+          <img src="./bow.png" width="112" height="28" />
+        </a>
+
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbar"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbar" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item"> List of composers </a>
+
+          <a class="navbar-item"> Composer's card </a>
+        </div>
+      </div>
+    </nav>
+    <div id="main">
+      <div id="navigation">
+        <button class="button is-dark" onclick="prevComp()">
+          <img src="left.png" alt="previous composer" />
+        </button>
+        <button class="button is-dark" onclick="nextComp()">
+          <img src="right.png" alt="next composer" />
+        </button>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3"></figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img src="./violin.png" />
+              </figure>
+            </div>
+            <div class="media-content"></div>
+          </div>
+
+          <div class="content">
+            <p class="title is-5">WORKS</p>
+            <ul class="works-list"></ul>
+          </div>
+          <div id="work-nav">
+            <button
+              class="button is-dark is-outlined see-more"
+              onclick="PrevWorks()"
+            >
+              Previous works
+            </button>
+            <button
+              class="button is-dark is-outlined see-more"
+              onclick="SeeMore()"
+            >
+              See more works
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
