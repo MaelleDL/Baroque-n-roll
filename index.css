@@ -17,7 +17,7 @@ body {
   color: #e4e4e4 !important;
 }
 .navbar-item:hover {
-  color: #2f2f2f !important;
+  color: #e4e4e4 !important;
 }
 .navbar-item img {
   max-height: 10rem !important;
@@ -49,8 +49,24 @@ body {
   display: flex;
   justify-content: space-around;
 }
+
+footer {
+  background: #2f2f2f;
+  color: #e4e4e4;
+  display: flex;
+  justify-content: flex-end;
+}
+footer p {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+footer .navbar-item:hover {
+  background: #2f2f2f !important;
+  color: #87dcf1 !important;
+}
+
 @media only screen and (min-width: 992px) {
   .card {
-    width: 40%;
+    width: 30%;
   }
 }
